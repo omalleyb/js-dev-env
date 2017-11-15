@@ -10,9 +10,11 @@ JS development environment
 
 4.) put source code in **src** directory.  Put index.html here
 
-5.) try localtunnel `npm install -g localtunnel`, run `lt --port 3000`  this open a hole to expose outside to mapped port for testing
+5.) try localtunnel `npm install -g localtunnel`, run `lt --port 3000`  this open a hole to expose outside to mapped port for testing.  Create npm start script, start app, open second prompt to run `lt --port 300 --subdomain brian`
 
-6.) try now `pm install -g now`
+6.) try now for sharing progress, uploads project to cloud and returns URL for testing `pm install -g now`  Need npm start script like local tunnel.
 
-6.) try surge for static projects `pm install -g surge` type _surge_ in command prompt
+7.) try surge for sharing static projects `pm install -g surge` type _surge_ in command prompt
+
+
 
