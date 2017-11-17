@@ -1,14 +1,24 @@
 # js-dev-env
 JS development environment
 
-git commands
+__git commands__
+
 `git clone https://github.com/omalleyb/js-dev-env`
 
-`npm install` : `npm list` : `npm outdated` : `npm list`
+`git pull origin master` if something changes in git, and you need it locally
+
+`git add .` iadd files not in source control to github
+
+`git commit -m "my comments here about my code"`  commit locally
+
+`git push` to push changes to github or `git push origin master --force` if local changes to overwrite a change in github
+
+__npm commands__
+`npm install`, `npm list`, `npm outdated`, `npm install <package name> --g or s for local`
 
 change / update package.json to update packages use ^ or ~ to keep packages up to date and check periodically.
 
-`git pull origin master` if something changes in git, and you need it locally
+
 
 
 1.) grab editorconfig settings for your IDE on editorconfig.org
@@ -89,6 +99,8 @@ __eslint__
 
 6.) add a `lint` command to package.json scripts section.
 
-7.) a rule can be disabled within a file by adding ``/* eslint-disable no-console */`` at the top
+7.) a rule can be disabled within a file by adding ``/* eslint-disable no-console */`` at the top of the file or inline on a single line like this: `// eslint-disable-line no-console`
 
-8.)
+8.) to setup watching add to scripts in package.json: `"lint:watch": "npm run lint -- --watch",` below the exisitng lint script.  Add lint:watch to npm start as well and files will be watched
+
+9.)
